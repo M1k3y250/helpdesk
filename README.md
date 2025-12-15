@@ -104,6 +104,7 @@ CREATE TABLE ticket_comments (
 
 Nota: **<HASH_GENERADO>** debe ser creado con **generate_password_hash("tu_contrasena")** en Python.
 
+
 ### 7. Ejecutar la aplicacion
 python run.py
 
@@ -123,11 +124,11 @@ Acceder en: http://127.0.0.1:5000/login
 - Manual de usuario: **docs/manual_usuario.md**
 - Manual tecnico: **docs/manual_tecnico.md**
 - Capturas de pantalla: **docs/screenshots/**
-- login.png
-- dashboard.png
-- tickets_list.png
-- ticket_detail.png
-- users_list.png
+    - login.png
+    - dashboard.png
+    - tickets_list.png
+    - ticket_detail.png
+    - users_list.png
 
 **Repositorio Github**
 https://github.com/M1k3y250/helpdesk.git
