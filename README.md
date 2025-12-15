@@ -133,5 +133,4 @@ Acceder en: http://localhost:5000
 https://github.com/M1k3y250/helpdesk.git
 
 **Mejora adicional**
-- Dashboard con estadisticas de tickets por estado (OPEN, IN_PROGRESS< RESOLVED).
-- Asignacion automatica de agentes.
+- Asignacion de agentes y se refleja en la vista principal del Dashboard
