@@ -107,7 +107,7 @@ Nota: **<HASH_GENERADO>** debe ser creado con **generate_password_hash("tu_contr
 ### 7. Ejecutar la aplicacion
 python run.py
 
-Acceder en: http://localhost:5000
+Acceder en: http://127.0.0.1:5000/login
 
 **Uso rapido**
 - **Inicio de session:** accede con tu email y contrasena.
