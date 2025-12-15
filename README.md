@@ -110,29 +110,28 @@ python run.py
 Acceder en: http://localhost:5000
 
 **Uso rapido**
-1.**Inicio de session:** accede con tu email y contrasena.
-2.**Dashboard:** Resumen de Tickets por estado.
-3.**Tickets:**
-. Crear ticket: **Tickets -> New ticket**
-. Ver tickets: Tickets: **Tickets**
-. Detalle: clic en el ID -> ver informacion, comentarios, cambiar estado?assign (si Admin o Agent)
-
-4.**Usuario** (solo Admin): Ver lista y cambiar roles
-5.**comentarios:** Anadir dede la vista detalle del ticket.
+- 1.**Inicio de session:** accede con tu email y contrasena.
+- 2.**Dashboard:** Resumen de Tickets por estado.
+- 3.**Tickets:**
+    - Crear ticket: **Tickets -> New ticket**
+    - Ver tickets: Tickets: **Tickets**
+    - Detalle: clic en el ID -> ver informacion, comentarios, cambiar estado?assign (si Admin o Agent)
+- 4.**Usuario** (solo Admin): Ver lista y cambiar roles
+- 5.**comentarios:** Anadir dede la vista detalle del ticket.
 
 **Capturas y manuales**
-. Manual de usuario: **docs/manual_usuario.md**
-. Manual tecnico: **docs/manual_tecnico.md**
-. Capturas de pantalla: **docs/screenshots/**
-. login.png
-. dashboard.png
-. tickets_list.png
-. ticket_detail.png
-. users_list.png
+- . Manual de usuario: **docs/manual_usuario.md**
+- . Manual tecnico: **docs/manual_tecnico.md**
+- . Capturas de pantalla: **docs/screenshots/**
+- . login.png
+- . dashboard.png
+- . tickets_list.png
+- . ticket_detail.png
+- . users_list.png
 
 **Repositorio Github**
 https://github.com/M1k3y250/helpdesk.git
 
 **Mejora adicional**
-. Dashboard con estadisticas de tickets por estado (OPEN, IN_PROGRESS< RESOLVED).
-. Asignacion automatica de agentes.
+- . Dashboard con estadisticas de tickets por estado (OPEN, IN_PROGRESS< RESOLVED).
+- . Asignacion automatica de agentes.
