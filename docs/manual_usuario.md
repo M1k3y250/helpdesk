@@ -7,7 +7,7 @@ Este manual explica cómo utilizar la aplicación web de Help Desk para gestiona
 ---
 
 ##  Inicio de sesión
-1. Accede a la URL del sistema: `http://localhost:5000`.
+1. Accede a la URL del sistema: `http://127.0.0.1:5000/login`.
 2. Ingresa tu **correo electrónico** y **contraseña** en el formulario de login.
 3. Haz clic en **Login**.
 4. Si las credenciales son correctas, serás redirigido al **Dashboard**.
