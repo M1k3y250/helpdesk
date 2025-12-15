@@ -51,6 +51,7 @@ La aplicación sigue una arquitectura cliente-servidor compuesta por tres capas 
 ---
 
 ## Estructura del proyecto
+```
 helpdesk/
 ├─ app/
 │  ├─ __init__.py        # Inicialización Flask + MySQL
@@ -67,7 +68,7 @@ helpdesk/
 ├─ requirements.txt      # Dependencias
 ├─ README.md
 └─ venv/                 # Entorno virtual
-
+```
 
 ---
 
