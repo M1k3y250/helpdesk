@@ -99,8 +99,8 @@ CREATE TABLE ticket_comments (
 
 ### 6. Insertar usuario administrador
 
-INSERT INTO users (name, email, password_hash, role)
-VALUES ('Admin', 'admin@example.com', '<HASH_GENERADO>', 'ADMIN');
+- INSERT INTO users (name, email, password_hash, role)
+- VALUES ('Admin', 'admin@example.com', '<HASH_GENERADO>', 'ADMIN');
 
 Nota: **<HASH_GENERADO>** debe ser creado con **generate_password_hash("tu_contrasena")** en Python.
 
