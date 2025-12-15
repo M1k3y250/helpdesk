@@ -59,7 +59,7 @@ Ejecutar en MariaDB:
 
 CREATE DATABASE helpdesk_db;
 USE helpdesk_db;
-
+```
 -- Crear tabla users
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -95,7 +95,7 @@ CREATE TABLE ticket_comments (
     FOREIGN KEY (ticket_id) REFERENCES tickets(id),
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
+```
 
 ### 6. Insertar usuario administrador
 
@@ -110,28 +110,28 @@ python run.py
 Acceder en: http://localhost:5000
 
 **Uso rapido**
-- 1.**Inicio de session:** accede con tu email y contrasena.
-- 2.**Dashboard:** Resumen de Tickets por estado.
-- 3.**Tickets:**
+- **Inicio de session:** accede con tu email y contrasena.
+- **Dashboard:** Resumen de Tickets por estado.
+- **Tickets:**
     - Crear ticket: **Tickets -> New ticket**
     - Ver tickets: Tickets: **Tickets**
     - Detalle: clic en el ID -> ver informacion, comentarios, cambiar estado?assign (si Admin o Agent)
-- 4.**Usuario** (solo Admin): Ver lista y cambiar roles
-- 5.**comentarios:** Anadir dede la vista detalle del ticket.
+- **Usuario** (solo Admin): Ver lista y cambiar roles
+- **comentarios:** Anadir dede la vista detalle del ticket.
 
 **Capturas y manuales**
-- . Manual de usuario: **docs/manual_usuario.md**
-- . Manual tecnico: **docs/manual_tecnico.md**
-- . Capturas de pantalla: **docs/screenshots/**
-- . login.png
-- . dashboard.png
-- . tickets_list.png
-- . ticket_detail.png
-- . users_list.png
+- Manual de usuario: **docs/manual_usuario.md**
+- Manual tecnico: **docs/manual_tecnico.md**
+- Capturas de pantalla: **docs/screenshots/**
+- login.png
+- dashboard.png
+- tickets_list.png
+- ticket_detail.png
+- users_list.png
 
 **Repositorio Github**
 https://github.com/M1k3y250/helpdesk.git
 
 **Mejora adicional**
-- . Dashboard con estadisticas de tickets por estado (OPEN, IN_PROGRESS< RESOLVED).
-- . Asignacion automatica de agentes.
+- Dashboard con estadisticas de tickets por estado (OPEN, IN_PROGRESS< RESOLVED).
+- Asignacion automatica de agentes.
