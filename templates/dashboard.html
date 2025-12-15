@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Dashboard</h2>
+    <p>Bienvenido, {{ session['user_name'] }}!</p>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Tickets</h5>
+                    <p class="card-text">Ver todos los tickets.</p>
+                    <a href="{{ url_for('routes.tickets_list') }}" class="btn btn-light">Ir a Tickets</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            {% if session['user_role'] == 'ADMIN' %}
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Usuarios</h5>
+                    <p class="card-text">Administrar usuarios.</p>
+                    <a href="{{ url_for('routes.users_list') }}" class="btn btn-light">Ir a Usuarios</a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

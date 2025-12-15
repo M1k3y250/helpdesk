@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3>Ticket #{{ ticket[0] }} - {{ ticket[1] }}</h3>
+        <a href="{{ url_for('routes.tickets_list') }}" class="btn btn-secondary">Back</a>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <p><strong>Status:</strong> <span class="badge bg-secondary">{{ ticket[2] }}</span></p>
+            <p><strong>Priority:</strong> <span class="badge bg-info">{{ ticket[3] }}</span></p>
+            <p><strong>Created by:</strong> {{ ticket[7] }}</p>
+            <p><strong>Assigned to:</strong> {{ ticket[8] or "Unassigned" }}</p>
+            <p><strong>Description:</strong></p>
+            <p>{{ ticket[4] }}</p>
+        </div>
+    </div>
+
+    {% if session.get("user_role") in ["ADMIN", "AGENT"] %}
+
+
+    <!-- Form para actualizar estado y asignar -->
+    <div class="card mb-3">
+    <div class="card-body">
+        <form method="post" action="{{ url_for('routes.ticket_update', ticket_id=ticket[0]) }}">
+            <div class="row">
+                <div class="col-md-4">
+                    <label class="form-label">Status</label>
+                    <select name="status" class="form-select">
+                        <option value="OPEN" {% if ticket[3] == "OPEN" %}selected{% endif %}>OPEN</option>
+                        <option value="IN_PROGRESS" {% if ticket[3] == "IN_PROGRESS" %}selected{% endif %}>IN PROGRESS</option>
+                        <option value="RESOLVED" {% if ticket[3] == "RESOLVED" %}selected{% endif %}>RESOLVED</option>
+                        <option value="CLOSED" {% if ticket[3] == "CLOSED" %}selected{% endif %}>CLOSED</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Assigned to</label>
+                    <select name="assigned_to" class="form-select">
+                        <option value="">Unassigned</option>
+                        {% for a in agents %}
+                        <option value="{{ a[0] }}" {% if ticket[6] == a[0] %}selected{% endif %}>{{ a[1] }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary w-100">Update</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endif %}
+
+
+
+    <!-- Comentarios -->
+    <h5>Comments</h5>
+    <ul class="list-group mb-3">
+        {% for c in comments %}
+        <li class="list-group-item">
+            <div class="d-flex justify-content-between">
+                <strong>{{ c[1] }}</strong>
+                <small>{{ c[3] }}</small>
+            </div>
+            <p class="mb-0">{{ c[2] }}</p>
+        </li>
+        {% else %}
+        <li class="list-group-item"><em>No comments yet.</em></li>
+        {% endfor %}
+    </ul>
+
+    <!-- Form agregar comentario -->
+    <div class="card">
+        <div class="card-body">
+            <form method="post" action="{{ url_for('routes.comment_add', ticket_id=ticket[0]) }}">
+                <div class="mb-3">
+                    <label class="form-label">Add Comment</label>
+                    <textarea name="comment" class="form-control" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Comment</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
