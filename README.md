@@ -110,6 +110,9 @@ python run.py
 
 Acceder en: http://127.0.0.1:5000/login
 
+
+---
+
 **Uso rapido**
 - **Inicio de session:** accede con tu email y contrasena.
 - **Dashboard:** Resumen de Tickets por estado.
