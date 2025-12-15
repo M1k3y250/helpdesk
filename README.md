@@ -121,7 +121,7 @@ Acceder en: http://127.0.0.1:5000/login
     - Ver tickets: Tickets: **Tickets**
     - Detalle: clic en el ID -> ver informacion, comentarios, cambiar estado?assign (si Admin o Agent)
 - **Usuario** (solo Admin): Ver lista y cambiar roles
-- **comentarios:** Anadir dede la vista detalle del ticket.
+- **Comentarios:** Anadir dede la vista detalle del ticket.
 
 
 ---
