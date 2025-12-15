@@ -55,8 +55,15 @@ La aplicación sigue una arquitectura cliente-servidor compuesta por tres capas 
 helpdesk/
 ├─ app/
 │  ├─ __init__.py        # Inicialización Flask + MySQL
-│  ├─ routes.py          # Rutas (login, tickets, usuarios)
+│  └─routes.py          # Rutas (login, tickets, usuarios)
 ├─ templates/            # HTML (base, login, dashboard, tickets, users)
+│  ├─base.html
+│  ├─login.html
+│  ├─dashboard.html
+│  ├─ticket_detail.html
+│  ├─tickets_list.html
+│  ├─tickets_new.html
+│  └─users_list.html
 ├─ static/               # CSS y JS
 ├─ docs/                 # Manuales y capturas
 │  ├─ manual_usuario.md
