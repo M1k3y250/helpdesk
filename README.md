@@ -120,6 +120,9 @@ Acceder en: http://127.0.0.1:5000/login
 - **Usuario** (solo Admin): Ver lista y cambiar roles
 - **comentarios:** Anadir dede la vista detalle del ticket.
 
+
+---
+
 **Capturas y manuales**
 - Manual de usuario: **docs/manual_usuario.md**
 - Manual tecnico: **docs/manual_tecnico.md**
