@@ -34,7 +34,7 @@ Arquitectura:
 ## Instalación y configuración
 
 ### 1. Clonar el repositorio
-git clone https://github.com/tuusuario/helpdesk.git
+git clone https://github.com/M1k3y250/helpdesk.git
 cd helpdesk
 
 ### 2. Crear entorno virtual
@@ -131,7 +131,7 @@ Acceder en: http://localhost:5000
 . users_list.png
 
 **Repositorio Github**
-
+https://github.com/M1k3y250/helpdesk.git
 
 **Mejora adicional**
 . Dashboard con estadisticas de tickets por estado (OPEN, IN_PROGRESS< RESOLVED).
