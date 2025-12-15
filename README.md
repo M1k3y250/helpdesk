@@ -38,9 +38,9 @@ git clone https://github.com/M1k3y250/helpdesk.git
 cd helpdesk
 
 ### 2. Crear entorno virtual
-python -m venv venv
-source venv/bin/activate    # macOS/Linux
-venv\Scripts\activate       # Windows
+- python -m venv venv
+- source venv/bin/activate    # macOS/Linux
+- venv\Scripts\activate       # Windows
 
 ### 3. Instalar dependencias
 pip install -r requirements.txt
@@ -48,11 +48,11 @@ pip install -r requirements.txt
 ### 4. Configurar variables de entorno
 Crear un archivo **.env** o exportar las variables en tu sistema:
 
-SECRET_KEY=<tu_secreto>
-MYSQL_HOST=localhost
-MYSQL_USER=<usuario_mysql>
-MYSQL_PASSWORD=<contraseña_mysql>
-MYSQL_DB=helpdesk_db
+- SECRET_KEY=<tu_secreto>
+- MYSQL_HOST=localhost
+- MYSQL_USER=<usuario_mysql>
+- MYSQL_PASSWORD=<contraseña_mysql>
+- MYSQL_DB=helpdesk_db
 
 ### 5. Crear base de datos y tablas
 Ejecutar en MariaDB:
